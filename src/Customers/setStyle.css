@@ -1,0 +1,30 @@
+/* Apply flexbox layout to align both forms side by side */
+.accountInput {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Style for both forms */
+.accountInput form, .account-details form {
+    width: 50%; /* Same width for both forms */
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Remove margin-left on the second form */
+.account-details {
+    margin-left: 20px;
+}
+
+.accountInput form h4, .account-details form h4 {
+    margin-bottom: 10px;
+    color: #0077B6;
+}
+
+.accountInput form p, .account-details form p {
+    margin: 10px 0;
+    font-size: 16px;
+}
